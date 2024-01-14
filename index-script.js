@@ -38,7 +38,7 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 
 };
-/*==================== scroll reveal animations need online ====================*/
+
 ScrollReveal({
     reset: true,
     distance: '80px',
@@ -51,7 +51,7 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-/*==================== typed js need online ====================*/
+
 const typed = new Typed('.multiple-text', {
     strings: ['Multimedia Artists?'],
     typeSpeed: 80,
@@ -62,7 +62,7 @@ const typed = new Typed('.multiple-text', {
 
 
 
-/*==================== dark/light mode ====================*/
+
 
 
 function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
