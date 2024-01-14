@@ -106,3 +106,8 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
   
     currentThemeSetting = newTheme;
   }); 
+
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
