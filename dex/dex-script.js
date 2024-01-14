@@ -38,7 +38,7 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 
 };
-/*==================== scroll reveal animations ====================*/
+
 ScrollReveal({
     reset: true,
     distance: '80px',
@@ -51,7 +51,7 @@ ScrollReveal().reveal('.home-img, .portfolio-box, .contact form', { origin: 'bot
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-/*==================== typed js ====================*/
+
 const typed = new Typed('.multiple-text', {
     strings: ['Graphic Designer', 'Multimedia Editor'],
     typeSpeed: 80,
@@ -62,7 +62,7 @@ const typed = new Typed('.multiple-text', {
 
 
 
-/*==================== dark/light mode ====================*/
+
 
 
 function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
@@ -106,3 +106,8 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
   
     currentThemeSetting = newTheme;
   }); 
+
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
